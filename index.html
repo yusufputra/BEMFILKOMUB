@@ -6,13 +6,73 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>BEM FILKOM UB</title>
 	<style type="text/css">
-		footer
-			{
-				background-color: #64BADC;
-			}
+		footer{
+			background-color: #64BADC;
+		}
+		.footer-section {
+		    background: #CCFFFF;
+		    padding: 50px 0px;
+		    color: #022d41;
+		}
+
+		.footer-section p {
+		    font-size: 14px;
+		}
+
+		.footer-section a {
+		    color: #194555;
+		}
+
+		.fa {
+		  padding: 20px;
+		  font-size: 30px;
+		  width: 50px;
+		  text-align: center;
+		  text-decoration: none;
+		  margin: 5px 2px;
+		}
+
+		.fa:hover {
+		    opacity: 0.7;
+		}
+
+		.social-icon {
+	        list-style: none;
+	        padding-left: 0;
+	        margin: 0;
+	        text-align: center;
+	    }
+		
+	    
+	    .social-icon:before,
+	    .social-icon:after {
+	        content: " ";
+	        display: table;
+	    }
+	    
+	    .social-icon:after {
+	        clear: both;
+	    }
+	    .social-icon li {
+	        display: inline-block;
+	        margin: 0px 4px;
+	    }
+	    
+	   
+	    
+	    .social-icon li a:hover {
+	        box-shadow: 0px 8px 15px 0px rgba(90, 91, 95, 0.33);
+	    }
+	    
+	    .social-icon li a .fa {
+	        line-height: inherit;
+	    }
+    
+
 
 	</style>
 </head>
@@ -67,10 +127,36 @@
 
     
     <!-- Place your code here-->
-    <footer>
-      <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
-      </div>
+    <footer class="footer-section">
+       <!--Footer Links-->
+          <div class="container text-center text-md-left">
+	 <!--First column-->
+	 		<div class="row h-100">
+	 			<div class="col-md-6">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">BEM FILKOM UB</h6>
+                      <p>Sekretariat Gedung D1.11</p>
+					  <p>Fakultas Ilmu Komputer</p>
+                  </div>
+                  <!--/.First column-->
+				   <!--Second column-->
+                  <!--/.Third column-->
+				   <!--Fourth column-->
+                  <div class="col-md-6">
+                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                     <ul class="social-icon" id="contact">
+		                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
+		                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+		                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+		                <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
+		            </ul>
+		            
+                  </div>
+	 		</div>
+	 		<div class="row h-100">
+	 			<div class="col-md-12"><center>© Copyright 2018 BEM FILKOM</center></div>
+	 		</div>
+                  
+
     </footer>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
