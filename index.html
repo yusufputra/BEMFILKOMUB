@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/ionicons.css">
 	<title>BEM FILKOM UB</title>
 	<style type="text/css">
 		footer{
@@ -62,8 +64,6 @@
 	        margin: 0px 4px;
 	    }
 	    
-	   
-	    
 	    .social-icon li a:hover {
 	        box-shadow: 0px 8px 15px 0px rgba(90, 91, 95, 0.33);
 	    }
@@ -71,7 +71,51 @@
 	    .social-icon li a .fa {
 	        line-height: inherit;
 	    }
-    
+
+		.boutbem{
+			background-image: url(image/bem-full.JPG);
+			background-size: cover;
+		}
+		
+		.gap{
+			margin-top : 5%;
+		}
+
+		.gap-2{
+			margin-top : 23%;
+		}
+
+		.filter-img{
+			background: rgb(0, 0, 0, 0.5);
+			width: 100%;
+		}
+		
+		.bg-putih{
+			background: white;
+			padding: 2%;
+		}
+
+		/* .bg-biru-orange{
+			background: #64BADC;
+			background: -webkit-linear-gradient(right,#64BADC,0%,#F7600E,75%);
+			background: -moz-linear-gradient(right,#64BADC,0%,#F7600E,75%);
+			background: -o-linear-gradient(right,#64BADC,0%,#F7600E,75%);
+			background: -ms-linear-gradient(right,#64BADC,0%,#F7600E,75%);
+		} */
+		
+		.text-white{
+			color: white;
+		}
+
+		.icon{
+			font-size: 470%;
+			display: block;
+			color: #3498db;
+			margin-bottom: 30px;
+			margin-left : 0px;
+			transition: color 0.3s, transform 1s;
+		}
+		
 
 
 	</style>
@@ -106,6 +150,7 @@
 	  </div>
 	</div>
 	</nav>
+	
 	<div class="masthead">
       <div class="masthead-bg"></div>
      <div class="container-fluid h-100">
@@ -125,6 +170,72 @@
     </div>
     <!-- Place your code here-->
 
+	<div class="row h-100 boutbem">
+		<div class="filter-img">
+				<div class="col-md-12 gap">
+					<div class="container text-white">
+							<center><h1 class="text-center">TENTANG BEM FILKOM 2018</h1></center>
+					</div>				
+				</div>
+
+				<div class="col-md-12 gap-2">
+					<div class="container bg-putih">
+							<center><p>Badan Eksekutif Mahasiswa (BEM) Universitas Brawijaya merupakan sebuah lembaga eksekutif tingkat fakultas. Membawa istilah eksekutif, BEM FILKOM bertugas untuk menjalankan program-program kerja yang selaras dan mematuhi segala tata tertib yang telah ditetapkan oleh Dewan Perwakilan Mahasiswa (DPM), yang merupakan lembaga legislatif tingkat universitas. Dalam pendekatan kelembagaan, BEM FILKOM hadir untuk mempertanggungjawabkan hak yang seharusnya diterima oleh mahasiswa melalui kegiatan aktualasi diri kemahasiswaan. Sederhananya, setiap uang yang dibayarkan oleh mahasiswa kepada pihak fakultas termuat hak mahasiswa dalam kegiatan aktualisasi diri kehidupan kampus. Dalam level fakultas, BEM FILKOM hadir sebagai sarana untuk mempertanggungjawabkan hal tersebut.</p></center>
+					</div>				
+				</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<div class="container">
+				<div class="row">
+						<div class="col-md-6">
+								<center><i class="ion-ios-briefcase icon"></i>
+								<p>Kerja Professional Diiringi Kekeluargaan</p></center>
+						</div>
+						<div class="col-md-6">
+								<center><i class="ion-ios-aperture icon"></i>
+								<p>Sinergisme</p></center>
+						</div>	
+				</div>
+				<div class="row">
+						<div class="col-md-12">
+								<center><i class="ion-ios-lightbulb icon"></i>
+								<p>Iklim Produktif dalam Inovasi</p></center>
+						</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="container">
+					<img src="image/preswapres.png" width="100%">
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="container">
+					<div class="row">
+							<div class="col-md-6">
+									<center><i class="ion-android-star icon"></i>
+										<p>Apresiatif</p></center>
+							</div>
+							<div class="col-md-6">
+									<center><i class="ion-android-send icon"></i>
+										<p>Advokasi Mandiri</p></center>
+							</div>
+					</div>
+					<div class="row">
+							<div class="col-md-12">
+									<center><i class="ion-android-done-all icon"></i>
+										<p>Aksi Nyata dalam Sosial Politik</p></center>
+							</div>
+					</div>
+					
+					
+			</div>
+		</div>
+	</div>
     
     <!-- Place your code here-->
     <footer class="footer-section">
