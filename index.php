@@ -93,6 +93,17 @@
 			margin-top : 2%;
 		}
 
+		.gap-heading{
+			margin-top : 7%;
+		}
+
+		.gap-apps{
+			margin-top : 5%;
+			margin-bottom : 8%;
+			margin-left : auto;
+			margin-right : auto;
+		}
+
 		.filter-img{
 			background: rgb(0, 0, 0, 0.5);
 			width: 100%;
@@ -184,7 +195,7 @@
 	</nav>
 	<!-- Your code Here -->
 	<?php
-	// error_reporting(0);
+	error_reporting(0);
 	$page = $_GET['page'];
 
 	switch($page){
