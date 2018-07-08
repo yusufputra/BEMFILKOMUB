@@ -1,267 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-    
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://unpkg.com/ionicons@4.2.4/dist/css/ionicons.min.css" rel="stylesheet">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/ionicons.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-	<title>BEM FILKOM UB</title>
-	<style type="text/css">
-		footer{
-			background-color: #64BADC;
-		}
-		.footer-section {
-		    background: #CCFFFF;
-		    padding: 50px 0px;
-		    color: #022d41;
-		}
-		.footer-section p {
-		    font-size: 14px;
-		}
-		.footer-section a {
-		    color: #194555;
-		}
-		.fa {
-		  padding: 20px;
-		  font-size: 30px;
-		  width: 50px;
-		  text-align: center;
-		  text-decoration: none;
-		  margin: 5px 2px;
-		}
-		.fa:hover {
-		    opacity: 0.7;
-		}
-		.social-icon {
-	        list-style: none;
-	        padding-left: 0;
-	        margin: 0;
-	        text-align: center;
-	    }
-		
-	    
-	    .social-icon:before,
-	    .social-icon:after {
-	        content: " ";
-	        display: table;
-	    }
-	    
-	    .social-icon:after {
-	        clear: both;
-	    }
-	    .social-icon li {
-	        display: inline-block;
-	        margin: 0px 4px;
-	    }
-	    
-	    .social-icon li a:hover {
-	        box-shadow: 0px 8px 15px 0px rgba(90, 91, 95, 0.33);
-	    }
-	    
-	    .social-icon li a .fa {
-	        line-height: inherit;
-	    }
-		.boutbem{
-			background-image: url(image/bem-full.JPG);
-			background-size: cover;
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-		
-		.gap{
-			margin-top : 5%;
-		}
-		.gap-2{
-			margin-top : 23%;
-		}
-		.gap-title{
-			margin-top : 2%;
-		}
-		.filter-img{
-			background: rgb(0, 0, 0, 0.5);
-			width: 100%;
-		}
-		
-		.bg-putih{
-			background: white;
-			padding: 2%;
-		}
-		.bg-lemb{
-			background-image: url(image/bg-lembaga.jpg);
-			background-size: cover;
-			background-attachment: fixed;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-		.bg-blue{
-			background-color: #2C7995;
-		}
-		.text-white{
-			color: white;
-		}
-		.icon{
-			font-size: 470%;
-			display: block;
-			color: #3498db;
-			margin-bottom: 30px;
-			margin-left : 0px;
-			transition: color 0.3s, transform 1s;
-		}
-		
-		.card {
-			width: 100%;
-			background-color: white;
-			opacity :1;
-			padding: 20px;
-			margin-top: 20px;
-		}
-		.fakeimg {
-			width: 100%;
-			padding: 20px;
-		}
-		.img-post {
-			width: 50%;
-		}
-		.port-logo{
-			width: 100px;
-			height: auto;
-		}
-	</style>
-</head>
-<body>
-	
-	<nav class="navbar navbar-expand-lg fixed-top">
-	<div class="col-md-9">
-	  <div class="navbar-header">	
-		  <a class="navbar-brand" href="#"><img src="image/bem-datar.png" style="width: 15%"></a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
-	  </div>
-	 </div>
-	 <div class="col-md-3">
-	  <div class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">PROFILE <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">INFORMASI</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">BEM APPS</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">KONTAK</a>
-	      </li>
-	    </ul>
-	  </div>
-	</div>
-	</nav>
-	<div class="row h-100">
-		<div data-aos="fade-down">
-				<div class="masthead">
-					<div class="masthead-bg"></div>
-					<div class="container-fluid h-100">
-					<div class="row h-100">
-						<div class="col-md-6 my-auto">
-							<div class="masthead-content text-white py-5 py-md-0">
-								<h1 class="mb-3">BEM FILKOM</h1>
-								<h2 class="mb-3">Universitas Brawijaya</h2>
-							</div>
-						</div>
-			
-						<div class="col-md-6 my-auto">
-							<img src="image/Logo BEM.png" style="width:100%">
-						</div>
-					</div>
-				</div>
-				</div>
+<!-- Place your code here-->
+<section id="about" class="about-section gap-kontak">
+<div class="container">
+	<div class="row">
+		<div class="col-md-8">
+			<div id="map"></div><br><br>
+			<span class="font-contact">Email<p class="text-indent-33">: bemfilkom@gmail.com</p>
+			<br>Address<p class="text-indent-15">: Jalan Veteran No. 8, Ketawanggede.</p><br>
+			<p class="text-indent-65">Kecamatan Lowokmaru, Ketawanggede,</p>
+			<p class="text-indent-65">Kec. Lowokmaru, Kota Malang, Jawa Timur 65145</p></span><br>
 		</div>
-	</div>
-	
-	
-    <!-- Place your code here-->
-      <section id="about" class="about-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<div id="map"></div><br><br>
-					<span class="font-contact">Email<p class="text-indent-33">: bemfilkom@gmail.com</p>
-					<br>Address<p class="text-indent-15">: Jalan Veteran No. 8, Ketawanggede.</p><br>
-					<p class="text-indent-65">Kecamatan Lowokmaru, Ketawanggede,</p>
-					<p class="text-indent-65">Kec. Lowokmaru, Kota Malang, Jawa Timur 65145</p></span><br>
-				</div>
-				<div class="col-md-4">
-					<br><br><br>
-					<div class="card card-blue text-center">
-						<div class="card-body card-body-blue">
-							<h4>Contact Us</h4>
-							<p class="font-size-14">Get in touch with BEM FILKOM UB</p>
-							<form action="#">
-							<div class="input-group mb-2">
-								<div class="input-group-prepend">
-									<div class="input-group-text input-grup-email"><i class="fa fa-envelope-o"></i></div>
-								</div>
-								<input type="text" class="form-control email-input" id="inlineFormInputGroup" placeholder="Enter your email here">
-							</div><br>
-						<button type="submit" class="btn btn-dark btn-purple btn-subscribe"><i class="fa fa-check fa-subscribe"></i>Send</button>
-							</form>
+		<div class="col-md-4">
+			<br><br><br>
+			<div class="card card-blue text-center">
+				<div class="card-body card-body-blue">
+					<h4>Contact Us</h4>
+					<p class="font-size-14">Get in touch with BEM FILKOM UB</p>
+					<form action="#">
+					<div class="input-group mb-2">
+						<div class="input-group-prepend">
+							<div class="input-group-text input-grup-email"><i class="fa fa-envelope-o"></i></div>
 						</div>
-					</div>
+						<input type="text" class="form-control email-input" id="inlineFormInputGroup" placeholder="Enter your email here">
+					</div><br>
+				<button type="submit" class="btn btn-dark btn-purple btn-subscribe"><i class="fa fa-check fa-subscribe"></i>Send</button>
+					</form>
 				</div>
 			</div>
 		</div>
-		</section>
-    
-    <!-- Place your code here-->
-    <footer class="footer-section">
-       <!--Footer Links-->
-          <div class="container text-center text-md-left">
-	 <!--First column-->
-	 		<div class="row h-100">
-	 			<div class="col-md-6">
-                      <h6 class="text-uppercase mb-4 font-weight-bold">BEM FILKOM UB</h6>
-                      <p>Sekretariat Gedung D1.11</p>
-					  <p>Fakultas Ilmu Komputer</p>
-                  </div>
-                  <!--/.First column-->
-				   <!--Second column-->
-                  <!--/.Third column-->
-				   <!--Fourth column-->
-                  <div class="col-md-6">
-                     <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                     <ul class="social-icon" id="contact">
-		                <li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>
-		                <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-		                <li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
-		                <li><a href="#" target="_blank"><i class="fa fa-youtube"></i></a></li>
-		            </ul>
-		            
-                  </div>
-	 		</div>
-	 		<div class="row h-100">
-				 <div class="col-md-12"><center>© Copyright 2018 BEM FILKOM</center></div>
-	 		</div>
-                  
-
-    </footer>
-</body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-	AOS.init({
-		duration: 1200
-	});
-</script>
-</html>
+	</div>
+</div>
+</section>

@@ -104,6 +104,11 @@
 			margin-right : auto;
 		}
 
+		.gap-kontak{
+			margin-top : 5%;
+			margin-bottom : 2%;
+		}
+
 		.filter-img{
 			background: rgb(0, 0, 0, 0.5);
 			width: 100%;
