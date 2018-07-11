@@ -201,6 +201,7 @@
 	<!-- Your code Here -->
 	<?php
 	error_reporting(0);
+	// echo $_SERVER['REQUEST_URI'];
 	$page = $_GET['page'];
 
 	switch($page){

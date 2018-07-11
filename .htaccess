@@ -1,0 +1,3 @@
+# RewriteEngine On
+
+# RewriteRule ^page/([a-zA-Z]+) ?page=$1
