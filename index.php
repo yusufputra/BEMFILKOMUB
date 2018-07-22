@@ -11,6 +11,8 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/ionicons.css">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 	<title>BEM FILKOM UB</title>
 	<style type="text/css">
 		footer{
@@ -200,27 +202,36 @@
 	</nav>
 	<!-- Your code Here -->
 	<?php
+	include "routes/Connection.php";
 	error_reporting(0);
 	// echo $_SERVER['REQUEST_URI'];
 	$page = $_GET['page'];
-
-	switch($page){
-		case "profile" :
-			include_once "profile.html";
-			break;
-		case "informasi" :
-			include_once "informasi.html";
-			break;
-		case "apps" :
-			include_once "apps.html";
-			break;
-		case "kontak" :
-			include_once "kontak.html";
-			break;
-		default :
-			include_once "home.html";
-
+	if(isset($_GET['kategori']) && $_GET['kategori'] != null){
+		include_once "post.php";
+	}else{
+		switch($page){
+			case "profile" :
+				include_once "profile.html";
+				break;
+			case "informasi" :
+				include_once "informasi.html";
+				break;
+			case "apps" :
+				include_once "apps.html";
+				break;
+			case "kontak" :
+				include_once "kontak.html";
+				break;
+			case "post" :
+				include_once "content/inputBerita.php";
+				break;
+			default :
+				include_once "home.html";
+	
+		}
 	}
+	
+
 	?>
     
     <!-- Place your code here-->
