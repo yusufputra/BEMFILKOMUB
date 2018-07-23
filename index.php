@@ -165,23 +165,24 @@
 			width: 100px;
 			height: auto;
 		}
-
+		
+		/* .navbar{
+			background-color: white;
+		} */
 
 
 	</style>
 </head>
 <body>
 	
-	<nav class="navbar navbar-expand-lg fixed-top">
-	<div class="col-md-9">
-	  <div class="navbar-header">	
-		  <a class="navbar-brand" href="."><img src="image/bem-datar.png" style="width: 15%"></a>
+	<div class="navbar navbar-expand-lg fixed-top">
+	
+		  <a class="navbar-brand" href="."><img src="image/bem-datar.png" style="width: 10%"></a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
-	  </div>
-	 </div>
-	 <div class="col-md-3">
+
+
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav">
 	      <li class="nav-item active">
@@ -198,8 +199,8 @@
 	      </li>
 	    </ul>
 	  </div>
+
 	</div>
-	</nav>
 	<!-- Your code Here -->
 	<?php
 	include "routes/Connection.php";
@@ -224,6 +225,9 @@
 				break;
 			case "post" :
 				include_once "content/inputBerita.php";
+				break;
+			case "view" :
+				include_once "postView.php";
 				break;
 			default :
 				include_once "home.html";
@@ -275,5 +279,19 @@
 	AOS.init({
 		duration: 1200
 	});
+
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+				$(".navbar").css("background-color", "white");
+			} else {
+				$(".navbar").css("background-color", "transparent");
+			}
+		});
+		$(".navbar	").click(function(){
+			alert("The paragraph was clicked.");
+		});
+	});
+	
 </script>
 </html>
