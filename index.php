@@ -425,6 +425,7 @@
 				margin: 6px 0;
 				transition: 0.4s;
 			}
+			
 		}
 
 
