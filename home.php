@@ -115,45 +115,36 @@
 			</div>				
 		</div>
 		<div class="row text-center" style="width:90%;margin-left:auto;margin-right:auto;margin-bottom:3%">
-			<div class="col-md-4">
-				<div data-aos="zoom-in-up">
-					<div class="card">
-							<div class="container">
-									<div class="fakeimg" style="height:200px;">
-										<a href="#"><img src="image/burung.png" class="img-post"></a>
+            <?php
+            $query      = "SELECT * FROM mainwebpost WHERE kategori='bemactivity'";
+            $sql        = mysqli_query($conn, $query);
+            $sql_result = $sql->fetch_all();
+            $rows       = $sql->num_rows;
+            $i=0;
+            while ($i < 3 && $rows != 0) {
+                $id = $sql_result[$i][0];
+                $nama = $sql_result[$i][1];
+                $tanggal = $sql_result[$i][3];
+                $gambar = $sql_result[$i][5];
+            
+            echo " 
+            <div class='col-md-4'>
+				<div data-aos='zoom-in-up'>
+					<div class='card'>
+							<div class='container'>
+									<div class='fakeimg' style='height:200px;'>
+										<a href='?page=view&id=".$id."'><img src='image/".$gambar."' class='img-post'></a>
 									</div>
-									<h2 style="font-size:120%">[ INFO LOMBA BULAN JUNI ]</h2>
-									<h5 style="font-size:80%">2018-06-09</h5>
+									<h2 style='font-size:120%'>".$nama."</h2>
+									<h5 style='font-size:80%'>".$tanggal."</h5>
 							</div>					
 						</div>
 				</div>
-			</div>
-			<div class="col-md-4">
-				<div data-aos="zoom-in-up">
-					<div class="card">
-							<div class="container">
-									<div class="fakeimg" style="height:200px;">
-										<a href="#"><img src="image/burung.png" class="img-post"></a>
-									</div>
-									<h2 style="font-size:120%">[ INFO LOMBA BULAN JUNI ]</h2>
-									<h5 style="font-size:80%">2018-06-09</h5>
-							</div>					
-						</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div data-aos="zoom-in-up">
-					<div class="card">
-							<div class="container">
-									<div class="fakeimg" style="height:200px;">
-										<a href="#"><img src="image/burung.png" class="img-post"></a>
-									</div>
-									<h2 style="font-size:120%">[ INFO LOMBA BULAN JUNI ]</h2>
-									<h5 style="font-size:80%">2018-06-09</h5>
-							</div>					
-						</div>
-				</div>
-			</div>			
+			</div>";
+            $i++;}
+            ?>
+			
+			
 		</div>
 	</div>
 
