@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/ionicons.css">
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
+
 	<title>BEM FILKOM UB</title>
 	
 </head>
@@ -31,9 +32,9 @@
 
 	  <div class="collapse navbar-collapse" id="navbarNav">
 	    <ul class="navbar-nav float-right" style="margin-left: auto;">
-	      <!-- <li class="nav-item active">
+	      <li class="nav-item active">
 	        <a class="nav-link" href="?page=profile">PROFILE <span class="sr-only">(current)</span></a>
-	      </li> -->
+	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="?page=informasi">INFORMASI</a>
 	      </li>
@@ -144,11 +145,14 @@
 	});
 
 	function myFunction(x) {
-    x.classList.toggle("change");
+		x.classList.toggle("change");
 	}
 	
 </script>
 <style type="text/css">
+		html{
+			height:100%;
+		}
 		h1,h2,h3,h4,h5,h6
 		{
 			font-weight:700
@@ -163,6 +167,7 @@
 		
 		html, body {
 			max-width: 100%;
+			/* height:100%; */
 			overflow-x: hidden;
 		}
 
@@ -209,10 +214,21 @@
 			padding:1rem
 		}
 
+		@media (min-width:1900px){
+			.masthead{
+				height:69em;
+			}
+		}
+		@media (max-width:1366px){
+			.masthead{
+				height:50em;
+			}
+		}	
+
 		@media (min-width:768px){
 			.masthead
 			{
-				height:100%;
+				/* height:100%; */
 				min-height:0;
 				padding-bottom:0
 			}
@@ -426,6 +442,33 @@
 				transition: 0.4s;
 			}
 			
+		}
+		.kotak{
+			position : relative;
+			width : 175px;
+			background : #CCFFFF;
+			border :7px solid #3fadd5;
+			border-radius : 20px;
+			padding-right: 60px;
+			margin-bottom : 20px;
+		}
+		@media (max-width: 767px) {
+			.kotak{
+				position:relative;
+				text-align: center;
+			}
+		}
+		@media (max-width: 520px){
+			.kotak{
+				position : relative;
+				margin-left : 85px;
+				width : 175px;
+				background : #CCFFFF;
+				border :7px solid #3fadd5;
+				border-radius : 20px;
+				padding-right: 60px;
+				margin-bottom : 20px;
+			}
 		}
 
 
